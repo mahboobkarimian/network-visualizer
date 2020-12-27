@@ -63,8 +63,9 @@ Using `-w` option and browsing to <http://127.0.0.1:8002> (by default), opens an
 
 ## Contribution
 
-Everybody is welcomed to use the code, modify, improve and add other features to it.
+Everybody is welcomed to use the code, modify, improve and add other features to it according to [BSD-3-Clause License](LICENSE)
 
 For example a useful feature could be adding an other command line argument to get the interval of re-downloading the tables from Contiki-NG border router in order to have an updated viw every `N` seconds.
 
 ## Screenshot
+![Alt text](force/screenshot.png?raw=true "Title")
