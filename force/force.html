@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RPL Network topology graph</title>
+    <link type="text/css" rel="stylesheet" href="force/force.css"/>
+  </head>
+  <body>
+    <div
+      class="menu">
+      Control Panel:
+      <input type="checkbox" id="Node_labels" name="Node labels" checked="">
+      <label class="item" for="Node labels">Node labels</label>
+      |
+      <input type="checkbox" id="Scroll_zoom" name="Scroll zoom" checked="">
+      <label class="item" for="Scroll zoom">Scroll zoom</label>
+      |
+      <input type="checkbox" id="refresh" name="Update" unchecked="">
+      <label for="Update">Update every:</label>
+      <input type="number" id="interval" name="Interval" required
+      value="6" min="1" max="999">
+       <label for="refresh">sec</label>
+      |
+      <button class="item btn-6b" type="button" id="refresh_now">Refresh Now</button>
+      |
+      <button class="item btn-6b" type="button" id="reset">Reset</button>
+    </div>
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript" src="force/force.js"></script>
+  </body>
+</html>
