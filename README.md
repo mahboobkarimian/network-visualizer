@@ -19,20 +19,24 @@ You can install them using `requirements.txt` and `pip`. If you like, you can us
 
 ### Contiki-NG
 
-In the mote which you connected by tunslip interface, an HTTP server is required to be included in the project. **Also you need to know the Global IPV6 Address of this mote.**
+In the mote which you connected by tunslip interface, an HTTP server is required to be included in the project:
 
-`
+```
 MODULES_REL += webserver
-`
+```
 
 Note that in Contiki-NG, this is included in RPL border router example already.
+
+**Please make sure that you know the Global IPV6 Address of this mote.**
 
 ## Run the Network Visualizer
 
 ### Run in the Terminal
 
 Open a Terminal window where you cloned this repo, then run:
-`python3 rpl_visualizer.py -i -w -p`
+``` console
+python3 rpl_visualizer.py [-i BR_GLOBAL_IP] [-w] [-p PORT]
+```
 The program takes 3 optional arguments:
 
 `-i` : global IPv6 address of your Border Router i.e fd00::302:304:506:708
@@ -63,7 +67,7 @@ Using `-w` option and browsing to <http://127.0.0.1:8002> (by default), opens an
 
 ## Contribution
 
-Everybody is welcomed to use the code, modify, improve and add other features to it according to [BSD-3-Clause License](LICENSE)
+Everybody is welcomed to use the code, modify, improve and add other features to it according to [BSD-3-Clause License](LICENSE).
 
 For example a useful feature could be adding an other command line argument to get the interval of re-downloading the tables from Contiki-NG border router in order to have an updated viw every `N` seconds.
 
